@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grace Polytechnic College, Mala - Admission Form</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Holy Grace Polytechnic College, Mala</h1>
+        <h2>Admission Form</h2>
+
+        <form action="/submit_form" method="post">
+            <table>
+                <tr>
+                    <td colspan="2"><label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" required></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname" required></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" required></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><label for="address">Address:</label><br>
+                    <textarea id="address" name="address" rows="4" cols="50" required></textarea></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><label for="course">Select Course:</label><br>
+                    <select id="course" name="course">
+                        <option value="computer_engineering">Computer Engineering</option>
+                        <option value="mechanical_engineering">Mechanical Engineering</option>
+                        <option value="civil_engineering">Civil Engineering</option>
+                        <option value="electrical_engineering">Electrical Engineering</option>
+                        <option value="electronics_engineering">Electronics Engineering</option>
+                    </select></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob" required></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><label for="gender">Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><label for="marks">Previous Qualification Marks:</label><br>
+                    <input type="number" id="marks" name="marks" min="0" max="100" required></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
